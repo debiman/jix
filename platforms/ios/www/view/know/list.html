@@ -1,0 +1,15 @@
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  <div class="h1 title">制度列表</div>
+</div>
+<ion-view class="viewcontact">
+     <ion-content class="home" has-header="false" id="home">
+      <div class="list">
+        <a class="item item-divider item-list" ng-repeat="entity in entitys" href="#/know/detail/{{ entity.id }}">
+          {{ entity.name }}
+        </a>
+      </div>
+
+
+   </ion-content>
+</ion-view>

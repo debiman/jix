@@ -1,0 +1,23 @@
+<div class="bar bar-header">
+<!--   <a class="button button-icon icon ion-home" href="#/app/home"></a> -->
+  <div class="h1 title">用户登陆</div>
+  <a class="button button-clear button-positive" href="#">忘记密码</a>
+</div>
+<ion-view class="viewcontact">
+     <ion-content class="home" has-header="false" id="home">
+	     <div class="list">
+	        <label class="item item-input item-floating-label">
+	          <span class="input-label">账号</span>
+	          <input type="text" placeholder="账号" ng-model="entity.username">
+	        </label>
+	        <label class="item item-input item-floating-label">
+	          <span class="input-label">密码</span>
+	          <input type="text" placeholder="密码" ng-model="entity.password">
+	        </label>
+	      </div>
+	      <div class="padding">
+        <button class="button button-block button-balanced" ng-click="login()">登陆</button>
+        <a class="button button-block button-positive" href="#/app/home">游客登陆</a>
+      </div>
+	 </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  <div class="h1 title">{{ part }}区图片上传</div>
+</div>
+<ion-view>
+     <ion-content class="home" has-header="false" id="home">
+
+     	<div
+        flow-init="{target: 'http://xinjia.phalcon.codinuts.com/api/index/push/site/node/init/'+entityId+'/'+part}"
+        flow-files-submitted="$flow.upload()"
+        flow-file-success="$file.msg = $message" class="flow-upload">
+        <span class="selector" flow-btn><button class="button button-balanced">点击上传</button></span>
+        <div class="selected-images" ng-show="$flow.files.length" flow-transfers>
+        	<!-- 
+          <ion-slide-box does-continue="true" on-slide-changed="slideHasChanged($flow.files.length)">
+                    <ion-slide ng-repeat="file in transfers">  
+                           	<img src="img/loading.gif" class="uploading" ng-if="file.progress() == '0'">
+                			<img flow-img = "file" class="uploaded" ng-if="file.progress() == '1'">
+                    </ion-slide>     
+            </ion-slide-box> -->
+            <div class="select-img" ng-repeat = "file in transfers" >
+                <img src="img/loading.gif" class="uploading" ng-if="file.progress() == '0'">
+                <img flow-img = "file" class="uploaded" ng-if="file.progress() == '1'">
+            </div>
+        </div>
+    </div>
+	 </ion-content>
+</ion-view>

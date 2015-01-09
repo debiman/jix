@@ -1,0 +1,22 @@
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  <div class="h1 title">陈列管理</div>
+</div>
+<ion-view class="viewcontact">
+     <ion-content class="home" has-header="false" id="home">
+     	<div class="list">
+        <div class="item item-thumbnail-left item-button-right" ng-repeat="entity in entitys" >
+              <img src="{{entity.path}}">
+              <a href="#/display/opinion/{{entity.id}}">
+                  <h2>{{ entity.title }}</h2>                  
+                  <p>建议： {{ entity.comment }}<br>
+                    创建日期： {{ entity.created }}</p>
+              </a>
+              <a class="button display-list" href="#/display/detail/{{ entity.id }}">
+                <i class="icon ion-camera">上传图片</i>
+              </a>
+        </div>
+       
+      </div>
+	 </ion-content>
+</ion-view>

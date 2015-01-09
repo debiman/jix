@@ -1,0 +1,16 @@
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  <div class="h1 title">{{ shop.title }}陈列图</div>
+</div>
+<ion-view class="viewcontact">
+     <ion-content class="home" has-header="false" id="home">
+     <div class="sidertitle">上传时间： {{ modified }}</div>
+     <div class="siderbox">
+     	 <ion-slide-box on-slide-changed="slideHasChanged($entitys)">
+            <ion-slide ng-repeat="entity in entitys">                  			
+            	<img src="{{entity}}">
+            </ion-slide>     
+        </ion-slide-box>
+     </div>
+	 </ion-content>
+</ion-view>

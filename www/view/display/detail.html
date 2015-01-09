@@ -1,0 +1,28 @@
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  <div class="h1 title">选择分区</div>
+</div>
+<ion-view>
+     <ion-content class="home" has-header="false" id="home">
+     		<div class="row">
+		     	<div class="col col-80 col-photo">
+		      		<!-- <div class = "title">陈列图详情</div> -->
+		      		<img src="{{ entitys.path }}">
+		      	</div>
+		      	<div class="col col-20 col-idea">
+              <div class="title">请选择上传图片分区</div>
+              <button class="button button-balanced" ng-click="upload('A')">A区</button>
+              <button class="button button-balanced" ng-click="upload('B')">B区</button>
+              <button class="button button-balanced" ng-click="upload('C')">C区</button>
+              <button class="button button-balanced" ng-click="upload('D')">D区</button>
+              <button class="button button-balanced" ng-click="upload('E')">E区</button>
+		      	</div>
+      		</div>
+      		
+       	<div class="upload">
+          <div class="title">指导意见</div>
+      	  {{ entitys.comment }}
+      	</div>
+     
+	 </ion-content>
+</ion-view>

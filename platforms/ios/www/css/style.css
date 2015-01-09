@@ -1,0 +1,199 @@
+/* Empty. Add your own CSS if you like */
+
+/**
+ * view
+ */
+.viewcontact,
+.home{
+    margin-top:43px;
+}
+/**
+ * magnifiers
+ */
+.magnifiers {
+    padding: 10px 0;
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+    text-rendering: optimizespeed;
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+.magnifier {
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    *display: inline;zoom:1;
+    width: 24%;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    margin-left: 3px;
+}
+.magnifier i {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    font-size: 60px;
+    margin: 0 auto;
+    border-radius: 10%;
+    background-color: #1aacc3;
+    color: #fff;
+}
+
+.magnifier strong {
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.display-list,
+.display-list-left{
+    margin-right: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 8%;    
+    background-color: #1aacc3;
+    height: 60px;
+    margin-top: 10px;
+    color: #fff;
+}
+.display-list-left{
+    margin-right: 25%;
+    background-color: #dea32c;
+}
+.item-button-right i{
+    font-size:15px;
+}
+.widget{
+    color: #a1a3a6;
+    font-size: 20px;
+    background-color: #f6f5ec;
+    height: 800px;
+}
+.widget .aticlename{
+    height: 50px;
+    background-color: #c1a173;
+    color: #fffffb;
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+.widget .left{
+    background-color: #f2eada;
+}
+
+.widget .name-zhangjie{
+    color:black;
+    background-color: #d9d6c3;
+    height: 40px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.item-list{
+    height:50px; 
+}
+.item-thumbnail-left a{
+    text-decoration: none;
+}
+.col-photo{
+    margin:-20px 0 -20px 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+   /* border: 1px #f2eada;
+    border-style:none solid none none; */
+}
+
+.col-photo img{
+    border-style: none;
+    width: 100%;
+    height: 550px;
+}
+
+.item-stacked-label{
+    border-style: none;
+}
+
+/*.slider img{
+    width:100%;
+    height:200px;
+}*/
+.selected-images img {
+    width: 30%;
+    height: 110px;
+    float: left;
+    display: inline-block;
+    margin: 5px;
+    border: 5px solid #eee;
+}
+
+.selector {
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #999;
+
+}
+
+.selected-images img.uploading {
+    border-color: #eee;
+}
+.selected-images img.uploaded {
+    border-color: green;
+}
+.flow-upload{
+    padding-top:45px;
+}
+.col .title{
+    text-align: center;
+    font-size: 1.1em;
+    color: #c1a173;
+}
+
+.col button{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.upload .title{
+    font-size: 1.2em;
+    color: black;
+}
+
+.upload{
+    margin-top: 15px;
+    color: #c1a173;
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
